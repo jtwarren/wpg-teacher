@@ -1,0 +1,15 @@
+- provide(:title, "Home")
+.row
+  .col-md-10.col-md-offset-1
+    .box
+      %h3 Welcome!
+      %p Welcome to the world peace game.  For more information please check out the following resources:
+      %ul
+        %li
+          = link_to "Game overview", "#"
+        %li
+          = link_to "Game rules", "#"
+        %li
+          = link_to "Resources", "#"
+      .start-game
+        = link_to "Start new game", new_game_path, :class => "btn btn-lg btn-custom"

@@ -1,0 +1,36 @@
+$orange: hsl(30, 80%, 52%);
+
+#header {
+  .navbar {
+    background-color: white;
+  }
+
+  .nav-text {
+    font-size: 1.8em;
+    color: $orange;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img.nav-logo {
+    padding: 10px 0;
+    height: 80px;
+  }
+
+  .right-links {
+    padding-top: 5px;
+  }
+  .nav-pills {
+    margin-top: 15px;
+    >li {
+      >a {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius:4px;
+        color: $orange;
+      }
+    }
+  }
+  }

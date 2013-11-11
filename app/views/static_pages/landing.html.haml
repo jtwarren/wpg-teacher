@@ -1,0 +1,39 @@
+- provide(:title, "World Peace Game")
+.row
+  .col-md-12
+    .box
+      .row
+        .col-md-7
+          %iframe{allowfullscreen: "", frameborder: "0", height: "315", src: "//www.youtube.com/embed/lCq8V2EhYs0", width: "560"}
+        .col-md-5
+          %h1 World Peace Game
+          .landing-action
+            = image_tag 'logo.png'
+            = link_to "Login", login_path, :class => "btn btn-lg btn-custom"
+            = link_to "Register", signup_path, :class => "btn btn-lg btn-custom"
+      .row.top-buffer
+        .col-md-7
+          %h2 Why the World Peace Game
+          %p In the words of John Hunter, the World Peace Game (WPG) is a teaching tool: 
+          %p "It is not an entertainment or a diversion for idle minds, because its main purpose is really as a teaching vehicle: helping kids to develop conceptual plans, design and implement them, push innovative and creative thinking, help them to formulate ideas and be able to express them concisely and persuasively, to be able to ‘deal‘ with adults on equal footing in conversation and to the extent possible conceptually and philosophically, to foster regular reflective practice, and of course, to foster compassion."
+        .col-md-5
+          = image_tag "landing-1.jpg", class: "landing-image"
+      .row.top-buffer
+        .col-md-6
+          = image_tag "landing-2.jpg", class: "landing-image"
+        .col-md-6
+          %p Your students will already be using the game to learn the larger concepts that John just pointed out. The WPG is truly incredible, however, because the game also gives you freedom to integrate core curriculum requirements. Think of the game as scaffolding for the teaching objectives that you have. Through play students achieve these objectives in a measurable way. 
+          %p Students learn to
+          %ul
+            %li Communicate, negotiate, and compromise
+            %li Make decisions under pressure
+            %li Set, enforce, and comply with standards of online behavior
+            %li Balance multiple conflicts and motivations
+            %li Chunk a larger problem into manageable pieces
+      .row.top-buffer
+        .col-md-5
+          %h2 Overview
+          %p Students take on roles as leaders in countries of various wealth, members of the World Bank, Arms Dealers, and various other positions. Each game day, countries take turns making declarations, followed by a period for negotiation after each declaration. The World Peace Game is played by constant discussion and negotiation. The game is won when the countries have worked to solve a list of crisis and every country has a net gain.
+        .col-md-7
+          .video.pull-right
+            %iframe{allowfullscreen: "", frameborder: "0", height: "315", src: "//www.youtube.com/embed/0_UTgoPUTLQ?rel=0", width: "560"}

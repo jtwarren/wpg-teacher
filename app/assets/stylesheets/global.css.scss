@@ -1,0 +1,35 @@
+$orange: #e78523;
+$green: #6a973f;
+
+
+html, body{
+  background-image: url('tweed.png');
+}
+
+h2, h3, h4, h5, h6 {
+  color: $green !important;
+}
+
+h1 {
+  color: $orange !important;
+}
+
+.top-buffer {
+  margin-top: 60px;
+}
+
+a {
+  color: $orange !important;
+}
+
+
+.box {
+  background: #FEFEFE;
+  height: 100%;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  padding: 20px;
+  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

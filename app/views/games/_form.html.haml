@@ -1,0 +1,47 @@
+= form_for(@game, {role: "form"}) do |f|
+  .form-group
+    = f.label :name, "Game name"
+    = f.text_field :name, class: "form-control"
+  .form-group
+    = f.label :saboteur
+    = f.text_field :saboteur, class: "form-control"
+    %p.help-block
+      Speaks and plans with facilitator individually.
+  .form-group
+    = f.label :weather_god
+    = f.text_field :weather_god, class: "form-control"
+    %p.help-block
+      Determines probability of things happening, has a lot of responsibility for making the game successful and fair. Also manages the weather on the school planet.
+
+  .country
+    = f.fields_for :countries do |c|
+      .form-group
+        = c.label :name, "Country name"
+        = c.text_field :name, class: "form-control"
+      .form-group
+        = c.label :prime_minister
+        = c.text_field :prime_minister, class: "form-control"
+        %p.help-block
+          Serves and speaks for the people of his or her country. Directs major political and social decisions and policy. Writes letters when soldiers are lost. Only player allowed to move troops, based on the direction of the Defense Minister. Approves all treaties and trades.
+      .form-group
+        = c.label :secretary_of_state
+        = c.text_field :secretary_of_state, class: "form-control"
+        %p.help-block
+          Second in command. Assists the PM and carries out directives. Signs diplomatic treaties.
+      .form-group
+        = c.label :defense_minister
+        = c.text_field :defense_minister, class: "form-control"
+        %p.help-block
+          Plans and carries out military defense/offensive strategy under leadership and directives of the PM. Declares attacks. Places orders for weapons to the Arms Dealers, but sale has to be approved by the Secretary of Trade and Commerce or the Comptroller.
+      .form-group
+        = c.label :comptroller
+        = c.text_field :comptroller, class: "form-control"
+        %p.help-block
+          Controls and accounts for nation’s budget, including asset gain and expenditures. Reports budgets to the World Bank for auditing. Responsible for the financial health of the country, has the power to veto any expenditures that would put the country into the red.
+      .form-group
+        = c.label :secretary_of_trade
+        = c.text_field :secretary_of_trade, class: "form-control"
+        %p.help-block
+          Makes trades with other nations and increases business assets of own country. Signs trade agreements.
+
+  = f.submit "Submit", class: "btn btn-custom"
