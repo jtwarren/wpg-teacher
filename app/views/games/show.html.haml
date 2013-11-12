@@ -1,2 +1,7 @@
-%h1 Games#show
-%p Find me in app/views/games/show.html.haml
+- provide(:title, "Game Overview")
+.row
+  .col-md-10.col-md-offset-1
+    .box
+      %h3 
+        = @game.name
+      
