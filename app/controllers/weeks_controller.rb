@@ -1,6 +1,6 @@
 class WeeksController < ApplicationController
   def one
-    @game = current_user.game
+    @game = current_user.create_game
   end
 
   def two

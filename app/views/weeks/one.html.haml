@@ -1,12 +1,25 @@
 - provide(:title, "Week 1")
 .row
-  .col-md-10.col-md-offset-1
+  .col-md-3
+    .box.side-nav
+      %ul.nav.nav-pills.nav-stacked
+        %li
+          %a{href: weeks_one_path} Today (Week 1)
+        %li
+          %a{href: game_path(current_user.game)} Current Game Status
+        %li
+          %a{href: procedures_path} Procedures
+        %li
+          %a{href: "#"} Reference charts
+        / %li
+        /   %a{href: "#"} Random crises cards
+  .col-md-9
     .box
       %h1 Week 1
       .week-video
         %iframe{allowfullscreen: "", frameborder: "0", height: "315", src: "//www.youtube.com/embed/iOC0mrmIjHo?rel=0", width: "560"}
       .blockquote.week-quote
-        "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle." ― Sun Tzu, The Art of War
+        "There is no instance of a country having benefited from prolonged warfare." ― Sun Tzu, The Art of War
 
       %h3 Prepare before class
       %ul

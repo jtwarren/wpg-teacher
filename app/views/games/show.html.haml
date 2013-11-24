@@ -1,7 +1,22 @@
 - provide(:title, "Game Overview")
 .row
-  .col-md-10.col-md-offset-1
+  .col-md-3
+    .box.side-nav
+      %ul.nav.nav-pills.nav-stacked
+        %li
+          %a{href: weeks_one_path} Today (Week 1)
+        %li
+          %a{href: game_path(current_user.game)} Current Game Status
+        %li
+          %a{href: procedures_path} Procedures
+        %li
+          %a{href: "#"} Reference charts
+  .col-md-9
     .box
       %h3 
         = @game.name
-      
+      %h4 Crises
+      This is a list of the crises that you've completed.  All crises are listed here and allows you (as a teacher) to check them off and save them.
+      = link_to "See all crises", crisis_path
+      %h4 Players
+      This is a list of players .. assume that it gives you full knowledge of each player in the game.

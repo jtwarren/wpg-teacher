@@ -8,4 +8,9 @@ class HomeController < ApplicationController
       redirect_to weeks_one_url
     end
   end
+
+  def test
+    # render layout: false
+    render layout: false, :file => 'public/land.html' and return
+  end
 end

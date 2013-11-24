@@ -1,6 +1,7 @@
 Wpg::Application.routes.draw do
 
   get "about" => "static_pages#about", :as => "about"
+  get "get_started" => "static_pages#get_started", :as => "get_started"
   get "home" => "home#home", :as => "home"
   get "landing" => "static_pages#landing", :as => "landing"
   
@@ -26,11 +27,20 @@ Wpg::Application.routes.draw do
   get "weeks/ten"
   get "weeks/eleven"
   get "weeks/twelve"
+
+  get "overview" => "static_pages#overview", :as => "overview"
+  get "crisis" => "static_pages#crisis", :as => "crisis"
+  get "setup" => "static_pages#setup", :as => "setup"
+  get "materials" => "static_pages#materials", :as => "materials"
+  get "learn" => "static_pages#learn", :as => "learn"
+  get "procedures" => "static_pages#procedures", :as => "procedures"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#landing'
+  root 'home#test'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

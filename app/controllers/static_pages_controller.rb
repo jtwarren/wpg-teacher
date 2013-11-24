@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def landing
   end
+
+  def get_started
+  end
 end

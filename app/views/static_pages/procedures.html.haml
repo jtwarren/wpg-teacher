@@ -1,0 +1,26 @@
+- provide(:title, "Procedures")
+.row
+  .col-md-3
+    .box.side-nav
+      %ul.nav.nav-pills.nav-stacked
+        %li
+          %a{href: weeks_one_path} Today (Week 1)
+        %li
+          %a{href: game_path(current_user.game)} Current Game Status
+        %li
+          %a{href: procedures_path} Procedures
+        %li
+          %a{href: "#"} Reference charts
+  .col-md-9
+    .box
+      %h1 Procedures
+      %h3 Military Engagement
+      %p Call for attack. Call out targets(s)
+      %p Coin toss 2 out of 3 called by engaging force for each target
+      %p Losing pieces removed by Winner. Poll back allowed
+      %p Battle budget must be signed off on (approved) in advance by Minister of Defense
+
+      %h3 Coup d’état
+      %p Call for Coup attempt at any time by party or parties
+      %p Coin toss by rebel(s) 2/ 3
+      %p Winner takes over country or remains in power. Loser must flee and seek asylum if none given goes to UN. May re-enter politics through any means (raise own army, seek re-election by cabinet, etc.)

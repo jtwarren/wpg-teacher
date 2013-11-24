@@ -4,13 +4,11 @@
       = link_to (image_tag 'logo.png', :class => 'nav-logo') + "World Peace Game", root_path, class: "nav-text"
     #collapse_links.collapse.navbar-collapse.right-links
       %ul.nav.nav-pills.navbar-right
-        %li
-          = link_to 'About', about_path
         - if current_user
           %li
-            = link_to current_user.email, home_path
-          %li
-            = link_to "Current Game", game_path(current_user.game)
+            = link_to "Current Game", home_path
         - else
           %li
             = link_to 'Login', login_path
+        %li
+          = link_to 'About', get_started_path
