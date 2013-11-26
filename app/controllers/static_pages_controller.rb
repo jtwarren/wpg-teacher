@@ -3,6 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def landing
+    render layout: false
   end
 
   def get_started

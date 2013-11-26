@@ -6,13 +6,9 @@
         %li
           %a{href: weeks_one_path} Today (Week 1)
         %li
-          %a{href: game_path(current_user.game)} Current Game Status
+          %a{href: game_path(current_user.game)} Game status
         %li
-          %a{href: procedures_path} Procedures
-        %li
-          %a{href: "#"} Reference charts
-        / %li
-        /   %a{href: "#"} Random crises cards
+          %a{href: procedures_path} Procedures and resources
   .col-md-9
     .box
       %h1 Week 1
@@ -35,7 +31,7 @@
       %ul
         %li Show Game Intro (Video?): Showing how the game is played can get them excited.
         %li Show students the game board with the 5 different countries. Explain the setup of the board and the meaning of all of the game pieces. 
-        %li Assign Roles
+        %li Assign Roles #{link_to 'here', new_game_path(current_user.game)}
         %ul
           %li Ask students chosen for the roles of prime minister and weather god[ess]. Remember the students can accept or reject your offer. 
           %li Declare the final roles to the class.

@@ -1,6 +1,17 @@
 - provide(:title, "Week 2")
 .row
-  .col-md-10.col-md-offset-1
+  .col-md-3
+    .box.side-nav
+      %ul.nav.nav-pills.nav-stacked
+        %li
+          %a{href: weeks_one_path} Today (Week 1)
+        %li
+          %a{href: game_path(current_user.game)} Game Status
+        %li
+          %a{href: procedures_path} Procedures
+        %li
+          %a{href: "#"} Reference charts
+  .col-md-9
     .box
       %h1 Week 2
       .week-video

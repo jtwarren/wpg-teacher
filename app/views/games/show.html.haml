@@ -6,17 +6,130 @@
         %li
           %a{href: weeks_one_path} Today (Week 1)
         %li
-          %a{href: game_path(current_user.game)} Current Game Status
+          %a{href: game_path(current_user.game)} Game status
         %li
-          %a{href: procedures_path} Procedures
-        %li
-          %a{href: "#"} Reference charts
+          %a{href: procedures_path} Procedures and resources
   .col-md-9
     .box
-      %h3 
-        = @game.name
-      %h4 Crises
-      This is a list of the crises that you've completed.  All crises are listed here and allows you (as a teacher) to check them off and save them.
+      %h3 Crises
       = link_to "See all crises", crisis_path
-      %h4 Players
-      This is a list of players .. assume that it gives you full knowledge of each player in the game.
+      .row
+        .col-md-6
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Border Land Dispute​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Border Land Dispute​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Air Defense Scramble​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Natural Disaster​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Rebel Insurgency​
+          .check
+            = check_box_tag 'crisis', 'yes', true
+            Religious Tensions​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Endangered Species​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Drone Attacks​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Territorial Ownership Dispute​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Oil Embargo​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Arms Proliferation​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Territorial Waters Dispute​
+          .check
+            = check_box_tag 'crisis', 'yes', true
+            Forced Alliance​
+        .col-md-6
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Global Warming (1)​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Global Warming (2)​
+          .check
+            = check_box_tag 'crisis', 'yes', true
+            Ethnic Cleansing​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Mercenaries and Rogue Military​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Ecological Disaster​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Toxic Chemical Spill​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            SPACE: Star Wars Missile Defense​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Undersea: Mining​
+          .check
+            = check_box_tag 'crisis', 'yes', true
+            Undersea: Sunken Civilization Artifacts​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Cyber-Hacking​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Ancestor Burial Dilemma​
+          .check
+            = check_box_tag 'crisis', 'yes', false
+            Oil Well Gusher Blow-Out​
+      %h3 Players
+      .player
+        <strong>Weather Goddess</strong> Alyssa McFadden
+      .player
+        <strong>Sabatour</strong> Andrew Conrad
+      .row
+        .col-md-6
+          .country
+            <u>Country 1</u>
+            %ul
+              %li <strong>Prime Minister</strong> Nick Nolet
+              %li <strong>Secretary of state</strong> Jerrie Gwendolyn
+              %li <strong>Defense minister</strong> Junior Anabella
+              %li <strong>Comptroller</strong> Dallas Jenae
+              %li <strong>Secretary of trade</strong> Charmian Phyllida
+        .col-md-6
+          .country
+            <u>Country 2</u>
+            %ul
+              %li <strong>Prime Minister</strong> Omar Letitia
+              %li <strong>Secretary of state</strong> Jenifer Delice
+              %li <strong>Defense minister</strong> Tonya Elissa
+              %li <strong>Comptroller</strong> Kingston Claribel
+              %li <strong>Secretary of trade</strong> Darcy Totty
+        .col-md-6
+          .country
+            <u>Country 3</u>
+            %ul
+              %li <strong>Prime Minister</strong> Alexa Keene
+              %li <strong>Secretary of state</strong> Mavis Prosper
+              %li <strong>Defense minister</strong> Dewayne Tamera
+              %li <strong>Comptroller</strong> Van Nan
+              %li <strong>Secretary of trade</strong> Mahala Dolph
+        .col-md-6
+          .country
+            <u>Country 4</u>
+            %ul
+              %li <strong>Prime Minister</strong> Norma Jeffrey
+              %li <strong>Secretary of state</strong> Boniface Donny
+              %li <strong>Defense minister</strong> Kory Danette
+              %li <strong>Comptroller</strong> Isabel Johna
+              %li <strong>Secretary of trade</strong> Kathi Gracie

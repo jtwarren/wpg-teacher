@@ -6,21 +6,32 @@
         %li
           %a{href: weeks_one_path} Today (Week 1)
         %li
-          %a{href: game_path(current_user.game)} Current Game Status
+          %a{href: game_path(current_user.game)} Game status
         %li
-          %a{href: procedures_path} Procedures
-        %li
-          %a{href: "#"} Reference charts
+          %a{href: procedures_path} Procedures and resources
   .col-md-9
     .box
-      %h1 Procedures
-      %h3 Military Engagement
+      %h1 Procedures and Resources
+
+      %h3 Procedures
+      %h4 Taking turns Procedure
+      %p PM stands approaches game field.
+      %p "I am PM ______ of ______ and these are our declarations.” PM may designate others in cabinet to approach and initiate moves. Team may confer during its turn only or during open negotiation period.  Team talking out of turn will be fined.
+
+      %h4 Military Engagement
       %p Call for attack. Call out targets(s)
       %p Coin toss 2 out of 3 called by engaging force for each target
       %p Losing pieces removed by Winner. Poll back allowed
       %p Battle budget must be signed off on (approved) in advance by Minister of Defense
 
-      %h3 Coup d’état
+      %h4 Coup d’état
       %p Call for Coup attempt at any time by party or parties
       %p Coin toss by rebel(s) 2/ 3
       %p Winner takes over country or remains in power. Loser must flee and seek asylum if none given goes to UN. May re-enter politics through any means (raise own army, seek re-election by cabinet, etc.)
+
+      %h3 Resources
+      .link
+        = link_to "Dossier", "dossier.pdf"
+      .link
+        = link_to 'Syllabus', 'syllabus.pdf'
+      %p Complete materials list #{link_to 'here', materials_path}
